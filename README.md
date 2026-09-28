@@ -18,16 +18,17 @@ Tracked paths are the job. They contain no operator identity and no live account
 
 ## Folder map
 
-| Folder | Role |
-| --- | --- |
-| `bots/backlog-buddy-jared/` | Backlog Buddy |
-| `bots/pixel-purist-ive/` | Pixel Purist |
-| `bots/system-sculptor-carmack/` | System Sculptor |
-| `bots/spec-sentinel-gates/` | Spec Sentinel |
-| `bots/code-mechanic-linus/` | Code Mechanic |
-| `bots/pr-admiral-hopper/` | PR Admiral |
+| Folder | Role | Lane |
+| --- | --- | --- |
+| `bots/backlog-buddy-jared/` | Backlog Buddy | Agile & Planning |
+| `bots/spec-sentinel-gates/` | Spec Sentinel | Requirements & Edge Cases |
+| `bots/pixel-purist-ive/` | Pixel Purist | UI / Visual Design |
+| `bots/system-sculptor-carmack/` | System Sculptor | Backend & Architecture |
+| `bots/code-mechanic-linus/` | Code Mechanic | Implementation & DevOps |
+| `bots/pr-admiral-hopper/` | PR Admiral | Code Review & QA |
+| `bots/tech-scribe-oreilly/` | Tech Scribe | External Documentation & Copy |
 
-Pilot pipeline, in role names: Backlog Buddy logs ideas and files tickets when asked. Spec Sentinel locks acceptance criteria. Code Mechanic implements on assignment. PR Admiral reviews the pull request against those criteria. System Sculptor joins when the work needs an architecture blueprint. Pixel Purist joins when the work needs a visual spec. The default path can skip System Sculptor and Pixel Purist.
+Pilot pipeline, in role names: Backlog Buddy logs ideas and files tickets when asked. Spec Sentinel locks acceptance criteria. Code Mechanic implements on assignment. PR Admiral reviews the pull request against those criteria. System Sculptor joins when the work needs an architecture blueprint. Pixel Purist joins when the work needs a visual spec. Tech Scribe writes external documentation and copy when the operator asks, and does not block the path. The default path can skip System Sculptor, Pixel Purist, and Tech Scribe.
 
 ## First run (personal overlay)
 
