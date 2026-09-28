@@ -1,0 +1,34 @@
+# Personal overlays — instance state. Never commit.
+# personal.example/ stays tracked, including personal.example/secrets stubs.
+bots/*/.personal/
+
+# Secret-value patterns
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.kdbx
+*.secret
+id_rsa
+id_ed25519
+id_ecdsa
+credentials.json
+service-account.json
+service-account*.json
+secrets.json
+**/secrets.json
+auth.json
+*.token
+
+# Editor and OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
