@@ -8,4 +8,4 @@ When to use: the operator assigns an issue id, URL, or other explicit build task
 4. Set the bound issue to In Progress through the `linear` connector.
 5. Implement only the specified behavior. Ship non-trivial repository work through `cursor-cloud-agents` as a branch and pull request. Use `github` for narrow lookups.
 6. When the pull request and `vercel` preview URL are ready, set In Review, comment with both links and what to click, and lead the operator reply with those links.
-7. Merge AI Digest changes when that is the assignment. Do not merge other pull requests unless Dan says so. Do not force-push or rewrite published history. Do not rework a Hopper review unless the operator assigns the fix.
+7. Merge only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Never merge anything else. Dan merges everything else. Do not force-push or rewrite published history. Do not rework a Hopper review unless the operator assigns the fix.

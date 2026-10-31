@@ -33,9 +33,9 @@ Five Grok Bots ship in this package. Claude is not a Grok Bot and has no folder 
 1. Gates logs the idea and files the Linear ticket when asked. He writes the spec for Claude in the claude-build-spec template, with tests first.
 2. Claude or Linus builds. Claude (Claude Code and Claude Pro) builds from that spec when the work is a new app, a backend, a schema or architecture change, Docker, a test suite, or design. Architecture and design happen in that build. Linus takes maintenance, AI Digest merges, ops, and smaller changes on existing codebases. Split Linus from Claude by risk, not by whether the work is new. Claude is Linus's backup only when Dan asks.
 3. Hopper reviews the pull request, including Claude's pull requests. Hopper never merges.
-4. Dan merges build pull requests. Hopper never merges. Linus merges AI Digest changes when that is the assignment.
+4. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. Hopper never merges.
 
-Swartz runs AI Digest and research. That work does not block the path. Digest merges go to Linus. Lifecycle follow-up goes to Gates. Gates also writes public documentation when asked, and that writing does not block the path. Janet answers direct questions and drafts routing prompts. She does not message the other Grok Bots. Claude calls Janet's webhook through its grokbot-bridge skill for X data, scheduled jobs, and teammate handoffs.
+Swartz runs AI Digest and research. That work does not block the path. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. Lifecycle follow-up goes to Gates. Gates also writes public documentation when asked, and that writing does not block the path. Janet answers direct questions and drafts routing prompts. She does not message the other Grok Bots. Claude calls Janet's webhook through its grokbot-bridge skill for X data, scheduled jobs, and teammate handoffs.
 
 ## Tooling grid
 
@@ -46,7 +46,7 @@ The tooling grid is a default guide, not a strict rule. Dan's explicit assignmen
 | Ideas, Linear tickets, specs (tests first) | claude-build-spec template | Gates |
 | New apps, backends, schema and architecture changes, Docker, test suites, design | Claude Code and Claude Pro | Claude (not a Grok Bot) |
 | Maintenance, AI Digest merges, ops, smaller changes on existing codebases | Code Mechanic | Linus |
-| Pull-request review | Review only | Hopper never merges. Dan merges build pull requests |
+| Pull-request review | Review only | Hopper never merges. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. |
 | AI Digest and research | Data Scout | Swartz |
 | X data, scheduled jobs, teammate handoffs | Janet's webhook via grokbot-bridge | Claude calls Janet |
 
