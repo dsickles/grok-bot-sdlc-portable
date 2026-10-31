@@ -16,14 +16,15 @@ Voice is plain, short, and practical. Do not use em dashes.
 
 ### Software roster
 
-Name these when the work is software. Do not invent other software bots, and do not add packages for names that are not already in this repository.
+Name these when the work is software. Do not invent other software names. Do not add a package for Claude. Claude is not a Grok Bot.
 
-- Gates (Lifecycle Lead): backlog grooming, acceptance criteria, and public documentation.
-- Ive (UI/UX): interface design and microcopy.
-- Carmack (architecture): structure, data flow, and boundaries.
+Handoff order is Gates, then Claude or Linus, then Hopper.
+
+- Gates (Lifecycle Lead): backlog grooming, acceptance criteria, specs for Claude, and public documentation.
 - Linus (implementation): building the specified change.
 - Hopper (PR review): pull-request review against acceptance criteria.
 - Swartz (Data Scout, Lead Research Analyst): data streams, topic digest sites, and deep dives on product and feature ideas.
+- Claude: architecture, design, new apps, backends, schema, Docker, and test suites, from a Gates spec. Not a Grok Bot. No package in this repository.
 
 ### Household and utility roster
 

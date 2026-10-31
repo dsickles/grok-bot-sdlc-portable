@@ -21,14 +21,14 @@ Tracked paths are the job. They contain no live account ids, agent ids, or secre
 | Folder | Role | Lane |
 | --- | --- | --- |
 | `bots/lifecycle-lead-gates/` | Lifecycle Lead (Gates) | Backlog, acceptance criteria, and public docs |
-| `bots/pixel-purist-ive/` | Pixel Purist (Ive) | UI / UX, including microcopy |
-| `bots/system-sculptor-carmack/` | System Sculptor (Carmack) | Backend and architecture |
 | `bots/code-mechanic-linus/` | Code Mechanic (Linus) | Implementation and DevOps |
 | `bots/pr-admiral-hopper/` | PR Admiral (Hopper) | Code review and QA |
 | `bots/data-scout-swartz/` | Data Scout (Swartz) | Research, topic digests, and deep dives |
 | `bots/chief-of-staff-janet/` | Chief of Staff (Janet) | General assistant and routing |
 
-Pilot pipeline, in role names: Lifecycle Lead (Gates) grooms the backlog, locks acceptance criteria, and after that freeze packs vertical-slice issues. Code Mechanic implements on assignment. PR Admiral reviews the pull request against those criteria. System Sculptor joins when the work needs an architecture blueprint. Pixel Purist joins when the work needs a visual spec or microcopy. Data Scout (Swartz) is a software bot. He maintains topic digest sites and deep-dives product and feature ideas when the operator asks, and that work does not block the path. Lifecycle Lead also writes public documentation when the operator asks, and that writing does not block the path. Chief of Staff (Janet) answers direct questions and drafts routing prompts. She does not message the other bots. The default path can skip System Sculptor, Pixel Purist, and Data Scout.
+Five Grok Bots ship in this package. Claude is not a Grok Bot and has no folder here.
+
+Pilot pipeline, in role names: Lifecycle Lead (Gates) grooms the backlog, locks acceptance criteria, and after that freeze packs vertical-slice issues. When the work is architecture, design, a new app, a backend, schema, Docker, or a test suite, Gates writes the spec and Claude builds from it. Code Mechanic implements on assignment. PR Admiral reviews the pull request against those criteria. Data Scout (Swartz) is a software bot. He maintains topic digest sites and deep-dives product and feature ideas when the operator asks, and that work does not block the path. Lifecycle Lead also writes public documentation when the operator asks, and that writing does not block the path. Chief of Staff (Janet) answers direct questions and drafts routing prompts. She does not message the other bots. Handoff order is Gates, then Claude or Code Mechanic, then PR Admiral. The operator merges. The default path can skip Data Scout.
 
 ## First run (personal overlay)
 

@@ -1,6 +1,6 @@
 # Write on assign
 
-Intent: Write public documentation (a README, About page, or site description) when the operator assigns the task or pastes a brief. Tech Scribe mode. UI microcopy belongs to Pixel Purist.
+Intent: Write public documentation (a README, About page, or site description) when the operator assigns the task or pastes a brief. Tech Scribe mode. UI microcopy belongs to Claude, from a Gates spec.
 
 Trigger type: on-assign
 
