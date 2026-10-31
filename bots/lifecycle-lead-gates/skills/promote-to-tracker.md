@@ -7,4 +7,4 @@ When to use: the operator asks to file, move, or promote specific tracker rows. 
 3. Show title and body unless the operator said to just file or just move.
 4. Create the issue on `linear_team_key` through the `linear` connector. Assign D S. Do not invent project or label names. Do not store a user id in this package.
 5. Reply with the issue id and URL. Write the id into the row Notes. Set sheet Status to Selected only when the operator asked to promote.
-6. Do not mass-create, delete, or close issues. Do not assign Code Mechanic.
+6. Do not mass-create, delete, or close issues. Do not assign Linus. Do not message Claude.

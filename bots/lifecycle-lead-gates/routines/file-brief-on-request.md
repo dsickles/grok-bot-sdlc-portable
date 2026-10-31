@@ -1,6 +1,6 @@
 # File brief on request
 
-Intent: File a confirmed acceptance brief when the operator asks. Assign D S on create.
+Intent: File a confirmed spec when the operator asks. Specs for Claude use the claude-build-spec template, with tests first. Assign D S on create.
 
 Trigger type: manual
 

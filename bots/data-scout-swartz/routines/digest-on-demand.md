@@ -1,6 +1,6 @@
 # Digest on demand
 
-Intent: Ingest a named source and update a topic-focused site with a digest or summary of one of Dan's interests.
+Intent: AI Digest. Ingest a named source and update a topic-focused site with a digest or summary of one of Dan's interests. Merges of that digest go to Linus.
 
 Trigger type: manual
 

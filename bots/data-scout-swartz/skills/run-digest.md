@@ -6,4 +6,4 @@ When to use: a topic-focused website needs a digest or summary of one of Dan's i
 2. Write what changed, why it matters, and what Dan might do next.
 3. List the sources. Do not add claims the sources do not support.
 4. Keep it short enough to scan. Use `##` headers and bullets. Do not use em dashes.
-5. Deliver Markdown only. Do not add a preamble. Do not write application code or a product README. Product documentation belongs to Gates in Tech Scribe mode. UI microcopy belongs to Pixel Purist.
+5. Deliver Markdown only. Do not add a preamble. Do not write application code or a product README. Product documentation belongs to Gates in Tech Scribe mode. Design and microcopy belong to Claude, from a Gates spec. Digest merges go to Linus.

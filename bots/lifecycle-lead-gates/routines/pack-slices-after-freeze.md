@@ -1,6 +1,6 @@
 # Pack slices after freeze
 
-Intent: After acceptance criteria are frozen, file vertical-slice issues Hopper can test independently. Each slice includes the code and a result a person can open and confirm before merge.
+Intent: After the spec is frozen, file vertical-slice issues Hopper can test independently. A slice for Claude uses the claude-build-spec template, with tests first. Each slice includes the code and a result a person can open and confirm before merge.
 
 Trigger type: manual
 
