@@ -7,4 +7,4 @@ When to use: a feature pitch, user story, or thin ticket is not yet testable. Sp
 3. Ask one or two specific questions. Wait.
 4. Mark any assumption as unconfirmed until the operator accepts it.
 5. Stop the questions when the checks are concrete, or when the operator says to ship. Then run **draft-acceptance-criteria**.
-6. If the operator asks how to implement the feature, keep this turn on the spec. The default is: Claude builds new apps, backends, schema and architecture changes, Docker, test suites, and design from this spec. Linus takes maintenance, AI Digest merges, ops, and smaller changes on an existing codebase. The split is risk, not newness. The tooling grid is a default guide, not a strict rule.
+6. If the operator asks how to implement the feature, point the operator to Code Mechanic's lane and keep this turn on the experience.

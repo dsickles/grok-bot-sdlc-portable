@@ -18,37 +18,17 @@ Tracked paths are the job. They contain no live account ids, agent ids, or secre
 
 ## Folder map
 
-Five Grok Bots ship in this package. Claude is not a Grok Bot and has no folder here.
-
 | Folder | Role | Lane |
 | --- | --- | --- |
-| `bots/lifecycle-lead-gates/` | Lifecycle Lead (Gates) | Ideas, Linear tickets, and specs for Claude |
-| `bots/code-mechanic-linus/` | Code Mechanic (Linus) | Maintenance, AI Digest merges, ops, and smaller changes |
-| `bots/pr-admiral-hopper/` | PR Admiral (Hopper) | Pull-request review only. Never merges |
-| `bots/data-scout-swartz/` | Data Scout (Swartz) | AI Digest and research |
-| `bots/chief-of-staff-janet/` | Chief of Staff (Janet) | General assistant, routing, and the Grok Bot bridge |
+| `bots/lifecycle-lead-gates/` | Lifecycle Lead (Gates) | Backlog, acceptance criteria, and public docs |
+| `bots/code-mechanic-linus/` | Code Mechanic (Linus) | Implementation and DevOps |
+| `bots/pr-admiral-hopper/` | PR Admiral (Hopper) | Code review and QA |
+| `bots/data-scout-swartz/` | Data Scout (Swartz) | Research, topic digests, and deep dives |
+| `bots/chief-of-staff-janet/` | Chief of Staff (Janet) | General assistant and routing |
 
-## Handoff order
+Five Grok Bots ship in this package. Claude is not a Grok Bot and has no folder here.
 
-1. Gates logs the idea and files the Linear ticket when asked. He writes the spec for Claude in the claude-build-spec template, with tests first.
-2. Claude or Linus builds. Claude (Claude Code and Claude Pro) builds from that spec when the work is a new app, a backend, a schema or architecture change, Docker, a test suite, or design. Architecture and design happen in that build. Linus takes maintenance, AI Digest merges, ops, and smaller changes on existing codebases. Split Linus from Claude by risk, not by whether the work is new. Claude is Linus's backup only when Dan asks.
-3. Hopper reviews the pull request, including Claude's pull requests. Hopper never merges.
-4. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. Hopper never merges.
-
-Swartz runs AI Digest and research. That work does not block the path. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. Lifecycle follow-up goes to Gates. Gates also writes public documentation when asked, and that writing does not block the path. Janet answers direct questions and drafts routing prompts. She does not message the other Grok Bots. Claude calls Janet's webhook through its grokbot-bridge skill for X data, scheduled jobs, and teammate handoffs.
-
-## Tooling grid
-
-The tooling grid is a default guide, not a strict rule. Dan's explicit assignment overrides it. Hopper never merging is a hard stop, not a row Dan can waive.
-
-| Work | Default | Who |
-| --- | --- | --- |
-| Ideas, Linear tickets, specs (tests first) | claude-build-spec template | Gates |
-| New apps, backends, schema and architecture changes, Docker, test suites, design | Claude Code and Claude Pro | Claude (not a Grok Bot) |
-| Maintenance, AI Digest merges, ops, smaller changes on existing codebases | Code Mechanic | Linus |
-| Pull-request review | Review only | Hopper never merges. Linus merges only the weekly AI Digest week PR (one that adds only a single content/digests/<week>.json file), automatically once all checks pass. Linus never merges anything else. Dan merges everything else. |
-| AI Digest and research | Data Scout | Swartz |
-| X data, scheduled jobs, teammate handoffs | Janet's webhook via grokbot-bridge | Claude calls Janet |
+Pilot pipeline, in role names: Lifecycle Lead (Gates) grooms the backlog, locks acceptance criteria, and after that freeze packs vertical-slice issues. When the work is architecture, design, a new app, a backend, schema, Docker, or a test suite, Gates writes the spec and Claude builds from it. Code Mechanic implements on assignment. PR Admiral reviews the pull request against those criteria. Data Scout (Swartz) is a software bot. He maintains topic digest sites and deep-dives product and feature ideas when the operator asks, and that work does not block the path. Lifecycle Lead also writes public documentation when the operator asks, and that writing does not block the path. Chief of Staff (Janet) answers direct questions and drafts routing prompts. She does not message the other bots. Handoff order is Gates, then Claude or Code Mechanic, then PR Admiral. The operator merges. The default path can skip Data Scout.
 
 ## First run (personal overlay)
 

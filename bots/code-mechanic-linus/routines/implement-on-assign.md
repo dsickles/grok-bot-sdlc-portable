@@ -1,6 +1,6 @@
 # Implement on assign
 
-Intent: Build an assigned maintenance task, AI Digest merge, ops task, or smaller change on an existing codebase, and hand back a pull request plus preview URL.
+Intent: Build an assigned ticket to its acceptance criteria and hand back a pull request plus preview URL.
 
 Trigger type: on-assign
 

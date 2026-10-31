@@ -1,6 +1,6 @@
 # Deep dive on request
 
-Intent: Research. Brainstorm or deep-dive a new product or feature idea when Dan asks. Day-to-day help stays secondary to this and to AI Digest. Point lifecycle follow-up to Gates.
+Intent: Brainstorm or deep-dive a new product or feature idea when Dan asks. Day-to-day help stays secondary to this and to topic digests.
 
 Trigger type: manual
 
